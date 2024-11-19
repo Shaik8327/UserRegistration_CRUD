@@ -23,19 +23,26 @@ The project is organized into the following main directories:
 ## Setup Instructions
 
 ### Here are the instructions for setting up your Eclipse project if you're deploying the RegisterUser_Crud project locally in Eclipse:
-1. Create a New Dynamic Web Project in Eclipse
-  Open Eclipse and go to the File menu.
-  Select New > Dynamic Web Project.
-  In the New Dynamic Web Project window:
-  Project Name: Enter RegisterUser_Crud as the project name.
-  Target Runtime: Select your Apache Tomcat or any other servlet container you're using.
-  If you haven't configured Tomcat in Eclipse yet, click on New Runtime and select Apache Tomcat (download and configure it first if required).
-  Dynamic Web Module Version: Choose the appropriate version (usually 3.0 or 4.0 depending on your Tomcat version).
+1. Use SqlScript 
+        -Regisration.sql
+      in mysql workbench to create the database and table.
+
+      
+2. Create a New Dynamic Web Project/Maven project in Eclipse
+    Open Eclipse and go to the File menu.
+    Select New > Dynamic Web Project.
+    In the New Dynamic Web Project window:
+    Project Name: Enter RegisterUser_Crud as the project name.
+    Target Runtime: Select your Apache Tomcat or any other servlet container you're using.
+    If you haven't configured Tomcat in Eclipse yet, click on New Runtime and select Apache Tomcat (download and configure it first if required).
+    Dynamic Web Module Version: Choose the appropriate version (usually 3.0 or 4.0 depending on your Tomcat version).
   Click Finish to create the project.
-2. Organize Project Structure
+
+
+4. Organize Project Structure
     Now, set up the folder structure inside your newly created project.
 
-    2.1. Create Folders for Frontend, Backend, and Configurations
+    3.1. Create Folders for Frontend, Backend, and Configurations
     Frontend Files (JSP):
 
     In the Project Explorer window, expand the RegisterUser_Crud project.
@@ -69,16 +76,16 @@ The project is organized into the following main directories:
            
               -hibernate.cfg.xml
    
-    2.2. Add the pom.xml (If Using Maven)
+    3.2. Add the pom.xml (If Using Maven)
       If you're using Maven for dependency management, make sure the pom.xml file is placed in the root of the project (same level as src and WebContent).
-4. Configure Database Connection in hibernate.cfg.xml
+5. Configure Database Connection in hibernate.cfg.xml
     Open the hibernate.cfg.xml file located in WebContent/WEB-INF and configure the connection settings:
     Update the <hibernate-configuration> section with your MySQL (or other database) details, such as the url, username, and password.
-5. Add Dependencies to pom.xml
+6. Add Dependencies to pom.xml
     If you're using Maven to manage dependencies, add the necessary libraries in the pom.xml file.
-6. Configure Web Deployment Descriptor (web.xml)
+7. Configure Web Deployment Descriptor (web.xml)
     In WebContent/WEB-INF/web.xml, configure the servlets and servlet-mapping for the application
-7. Run the Project Locally on Apache Tomcat
+8. Run the Project Locally on Apache Tomcat
     Deploy the project to Tomcat:
 
     In Eclipse, right-click on your project in Project Explorer.
