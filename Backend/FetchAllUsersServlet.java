@@ -1,4 +1,4 @@
-package com.controller;
+spackage com.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import com.Dao.UserDaoImplementation;
 import com.entity.User;
 
 
-public class FetchAll extends HttpServlet {
+public class FetchAllUsersServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
