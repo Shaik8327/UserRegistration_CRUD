@@ -99,6 +99,7 @@ The project is organized into the following main directories:
    
     View All Users: http://localhost:8080/RegisterUser_Crud/frontend/displayAllUsers.jsp
 9. Debugging and Logs
+
     If you face any issues, check the Console window in Eclipse for logs and error messages from Tomcat.
     Also, check the Server Logs for any deployment issues.
     By following these steps, you will have your RegisterUser_Crud project set up and running locally in Eclipse.
