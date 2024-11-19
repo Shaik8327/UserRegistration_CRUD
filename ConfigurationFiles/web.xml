@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Registration_crud</display-name>
+  <welcome-file-list>
+    <welcome-file>FetchAll</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FetchAll</display-name>
+    <servlet-name>FetchAll</servlet-name>
+    <servlet-class>com.controller.FetchAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FetchAll</servlet-name>
+    <url-pattern>/FetchAll</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteUser</display-name>
+    <servlet-name>DeleteUser</servlet-name>
+    <servlet-class>com.controller.DeleteUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUser</servlet-name>
+    <url-pattern>/DeleteUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditUserData</display-name>
+    <servlet-name>EditUserData</servlet-name>
+    <servlet-class>com.controller.EditUserData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditUserData</servlet-name>
+    <url-pattern>/EditUserData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
